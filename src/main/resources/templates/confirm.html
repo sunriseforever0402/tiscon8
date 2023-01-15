@@ -68,9 +68,9 @@
           <tr>
             <th style="width: 40%">お引越し予定月</th>
             <td>
-              <span th:each="prefecture : ${prefectures}" th:text="${prefecture.prefectureName}"></span>
+              <span th:text="*{schedule}+'月'"></span>
             </td>
-            <input type="hidden" name="schedule" id="schedule" th:value="*{oldPrefectureId}"/>
+            <input type="hidden" name="schedule" id="schedule" th:value="*{schedule}"/>
           </tr>
         <tr>
           <th style="width: 40%">集荷元住所（都道府県）</th>

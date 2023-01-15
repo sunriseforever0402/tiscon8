@@ -84,6 +84,14 @@ public class UserOrderForm {
         this.email = email;
     }
 
+    public String getSchedule() {
+        return schedule;
+    }
+
+    public void setSchedule(String schedule) {
+        this.schedule = schedule;
+    }
+
     public String getOldPrefectureId() {
         return oldPrefectureId;
     }
